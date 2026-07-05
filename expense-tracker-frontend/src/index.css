@@ -1,0 +1,114 @@
+:root {
+  --app-bg: #f3f6fb;
+  --app-card: #ffffff;
+  --app-card-rgb: 255, 255, 255;
+  --app-border: #e2e8f0;
+  --app-heading: #0f172a;
+  --app-muted: #64748b;
+  --app-text: #172033;
+  --app-subtle: #526071;
+  --app-field: #ffffff;
+  --app-field-border: #dbe3ef;
+  --app-table-border: #e5e7eb;
+  --app-table-head: #f8fafc;
+  --app-row-hover: #f8fbff;
+  --app-empty: #f8fafc;
+  --app-primary: #2563eb;
+  --app-primary-dark: #1d4ed8;
+  --app-success: #0f766e;
+  --app-warning: #d97706;
+  --app-danger: #dc2626;
+  --app-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  --app-soft-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  color: var(--app-text);
+  background: var(--app-bg);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --app-bg: #0b1120;
+  --app-card: #111827;
+  --app-card-rgb: 17, 24, 39;
+  --app-border: #243247;
+  --app-heading: #f8fafc;
+  --app-muted: #94a3b8;
+  --app-text: #dbeafe;
+  --app-subtle: #a8b3c7;
+  --app-field: #0f172a;
+  --app-field-border: #334155;
+  --app-table-border: #253449;
+  --app-table-head: #172033;
+  --app-row-hover: #142033;
+  --app-empty: #101827;
+  --app-primary: #60a5fa;
+  --app-primary-dark: #3b82f6;
+  --app-success: #2dd4bf;
+  --app-warning: #fbbf24;
+  --app-danger: #fb7185;
+  --app-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  --app-soft-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.08), transparent 28%),
+    linear-gradient(315deg, rgba(15, 118, 110, 0.08), transparent 30%),
+    var(--app-bg);
+  color: var(--app-text);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.Toastify__toast-container {
+  width: min(420px, calc(100vw - 24px));
+}
+
+.app-toast {
+  border-radius: 8px !important;
+  box-shadow: var(--app-shadow) !important;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #0f766e, #14b8a6) !important;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #be123c, #ef4444) !important;
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #b45309, #f59e0b) !important;
+}
+
+.Toastify__progress-bar {
+  height: 4px !important;
+}

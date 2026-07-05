@@ -1,0 +1,139 @@
+.login-container {
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.16), transparent 36%),
+    linear-gradient(315deg, rgba(15, 118, 110, 0.16), transparent 36%), #f3f6fb;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.auth-card {
+  background: #ffffff;
+  border: 1px solid var(--app-border);
+  border-radius: 8px;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.14);
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  max-width: 900px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.auth-brand {
+  background:
+    linear-gradient(135deg, rgba(20, 184, 166, 0.18), transparent 42%),
+    linear-gradient(315deg, rgba(37, 99, 235, 0.22), transparent 38%), #0f172a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+  padding: 34px;
+}
+
+.auth-logo {
+  background: linear-gradient(135deg, #14b8a6, #2563eb);
+  border-radius: 8px;
+  display: inline-flex;
+  height: 52px;
+  width: 52px;
+}
+
+.auth-brand span:not(.auth-logo) {
+  color: #cbd5e1;
+  display: block;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-top: auto;
+  text-transform: uppercase;
+}
+
+.auth-brand strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.login-form {
+  padding: 44px;
+}
+
+.login-form h2 {
+  color: var(--app-heading);
+  font-size: 2.15rem;
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+
+.auth-copy {
+  color: var(--app-muted);
+  margin: 0 0 26px;
+}
+
+.login-form .form-label {
+  color: #334155;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.login-form .form-control {
+  border-color: #dbe3ef;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+
+.login-form .form-control:focus {
+  border-color: var(--app-primary);
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.14);
+}
+
+.login-form .btn {
+  border-radius: 8px;
+  font-weight: 900;
+  margin-top: 8px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.login-form .btn-primary {
+  background: var(--app-primary);
+  border-color: var(--app-primary);
+}
+
+.login-form .btn-primary:hover {
+  background: var(--app-primary-dark);
+  border-color: var(--app-primary-dark);
+}
+
+.auth-link {
+  color: var(--app-muted);
+  margin: 22px 0 0;
+  text-align: center;
+}
+
+.auth-link a {
+  color: var(--app-primary);
+  font-weight: 900;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .auth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-brand {
+    min-height: 190px;
+    padding: 28px;
+  }
+
+  .login-form {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,76 @@
+.register-container {
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(217, 119, 6, 0.16), transparent 36%),
+    linear-gradient(315deg, rgba(225, 29, 72, 0.12), transparent 36%), #f3f6fb;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.register-form {
+  padding: 44px;
+}
+
+.register-form h2 {
+  color: var(--app-heading);
+  font-size: 2.15rem;
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+
+.register-form .form-label {
+  color: #334155;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.register-form .form-control {
+  border-color: #dbe3ef;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+
+.register-form .form-control:focus {
+  border-color: var(--app-primary);
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.14);
+}
+
+.register-form .btn {
+  border-radius: 8px;
+  font-weight: 900;
+  margin-top: 8px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.register-form .btn-primary {
+  background: var(--app-primary);
+  border-color: var(--app-primary);
+}
+
+.register-form .btn-primary:hover {
+  background: var(--app-primary-dark);
+  border-color: var(--app-primary-dark);
+}
+
+.register-form .auth-link {
+  color: var(--app-muted);
+  margin: 22px 0 0;
+  text-align: center;
+}
+
+.register-form .auth-link a {
+  color: var(--app-primary);
+  font-weight: 900;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .register-form {
+    padding: 30px;
+  }
+}
